@@ -27,7 +27,7 @@ encodeListKnown = findEncodings(images)
 print("Encode Finshed")
 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 while True:
     success,img = cap.read()
     imgs = cv2.resize(img,(0,0),None,0.25,0.25)
